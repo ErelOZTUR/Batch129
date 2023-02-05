@@ -26,7 +26,7 @@ public class TasKagitMakasss {
 
         do {
             String playerChoice=input.next().toLowerCase();
-            computerChoice= (int) (Math.random()*3*1);
+            computerChoice= (int) (Math.random()*3);
             String pcs =secenekler[computerChoice];
 
             if (playerChoice.equals("tas") || playerChoice.equals("kagit")|| playerChoice.equals("makas")){
