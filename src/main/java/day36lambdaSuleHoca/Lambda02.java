@@ -20,7 +20,10 @@ public class Lambda02 {
         //  System.out.println();
         System.out.println();
         System.out.println(printE2(unv));
-
+        System.out.println();
+        System.out.println(printE3(unv));
+        System.out.println();
+        System.out.println(printE4(unv));
 
 
     }//main
@@ -65,9 +68,20 @@ public static int printE2(List<Universite> unv){
 }
 
         //Task 05-->Ogrenci sayilari 550'dan fazla olan universite'lerin en buyuk notOrt'unu bulunuz.
+public static Universite printE3(List<Universite> unv){
+      return unv.stream().sorted(Comparator.comparing(Universite::getOgrenciSayisi).reversed()).findFirst().get();
+//return unv.stream().
+// filter(t->t.getOgrenciSayisi()>550).
+// mapToInt(t->t.getNotOrtalamasi()). // mapToInt ile değeri güncelledik.
+// max();                             // max() methodundan null gelme ihtimali wrapper classlarda var
+                                        // OptionalInt return etmeni ister
+    }
+//Task 06-->Ogrenci sayilari 1050'dan az olan universite'lerin en kucuk notOrt'unu bulunuz.
+public static Universite printE4(List<Universite> unv){
 
+        return unv.stream().sorted(Comparator.comparing(Universite::getOgrenciSayisi)).findFirst().get();
+        //return unv.stream().filter(t->t.getOgrenciSayisi()<1050).mapToInt(t->t.getNotOrtalamasi()).min();
+}
 
-
-        //Task 06-->Ogrenci sayilari 1050'dan az olan universite'lerin en kucuk notOrt'unu bulunuz.
 
 }

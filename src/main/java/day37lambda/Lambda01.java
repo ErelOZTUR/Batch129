@@ -41,6 +41,7 @@ public class Lambda01 {
 
     public static int getMultiplicationFromThreeToNine2(){
         return IntStream.range(3, 10).reduce(Math::multiplyExact).getAsInt();// rangeClosed() ==> [ )
+
     }
 
     //4)Size verilen sayinin faktoryelini hesaplayan kodu yaziniz.

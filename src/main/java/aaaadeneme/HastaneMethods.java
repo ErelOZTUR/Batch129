@@ -56,11 +56,11 @@ public class HastaneMethods {
 //            belirtiler();
 //
 //        }else System.out.println("yanlis id girdiniz lutfen tekrar deneyiniz");
-//        idsecim();
+//       idsecim();
 //    }
 
-//    private static void yenikayit(){
-//        System.out.println("Lutfen isim ve soyisim gririniz");
+//   private static void yenikayit(){
+//       System.out.println("Lutfen isim ve soyisim gririniz");
 //        String isim=scan.next().toUpperCase();
 //        String soyisim=scan.next().toUpperCase();
 //        Hasta yeniHasta=new Hasta(hastaId,isim,soyisim);
@@ -70,7 +70,8 @@ public class HastaneMethods {
 //            hastaListesiMap.put(hastaId,yeniHasta);
 //            belirtiler();
 //        }
-//    }
+//
+//   }
 //
 //    public static void belirtiler(){
 //
